@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(219, 245, 245);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+.cont{
+    width: 50%;
+    background-color: white;
+    align-self: center;
+    display: block;
+    margin: 120px auto;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 10px 20px black;
+}
+
+ul{
+    border-left: 6px solid teal;
+    list-style-type: none;
+}
+
+ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: whitesmoke;
+    font-size: 18px;
+    transition: 0.2s;
+    user-select: none;
+    opacity: 1;
+}
+
+ul li:hover{
+    opacity: 0.7;
+
+}
+
+ul li:nth-child(odd){
+    background-color: antiquewhite;
+
+}
+#list{
+    padding: 0;
+}
+
+ul li.checked{
+    background: #888;
+    color: white;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    content: "";
+    position: absolute;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 10px;
+    width: 7px;
+}
+
+.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 12px 16px 12 16px;
+}
+
+.close:hover{
+    color: red;
+}
+
+.head{
+    padding: 10px;
+    text-align: center;
+}
+
+.head h2,
+.head span{
+   
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.head h2{
+    font-size: 35px;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+.head::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input{
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 1.2rem;
+    outline: none;
+    box-shadow: 2px 2px 3px rgb(128, 128, 128);
+}
+.addtask{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+   gap: 2rem;
+}
+
+.add{
+    padding: 10px;
+    width: 25%;
+    background: teal;
+    float: left;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 2px 2px 3px rgb(128, 128, 128);
+
+}
+
+.add:hover{
+    opacity: 0.7;
+}
